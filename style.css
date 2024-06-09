@@ -1,0 +1,49 @@
+@import url(https://fonts.googleapis.com/css?family=VT323);
+
+/* ... (Other Keyframe animations) ... */
+
+/* Removed flicker animation */
+/* @keyframes flicker { 
+  0% { opacity: 0.15795 } 
+  /* ... (rest of flicker animation) ... 
+} */
+
+/* Removed scanline animation */
+/* @keyframes scan {
+  from { top: 0 }
+  to { top: 100% }
+} */
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* ... (Rest of the CSS styles) ... */
+
+.overlay {
+  height: 1px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  /* Added background color for visual consistency (optional) */
+  background-color: #101010; /* or use an image */
+}
+
+.overlay:before {
+  /* ... (Original overlay:before styles) ... */
+}
+
+/* Removed overlay:after with flicker animation */
+/* .overlay:after {
+  animation: flicker 0.30s infinite;
+  /* ... (rest of overlay:after styles) ... 
+} */
+
+/* ... (Rest of the CSS styles) ... */
+
+/* Removed scanline animation */
+/* .scanline {
+  animation: scroll 10s 5s infinite;
+  /* ... (rest of scanline styles) ... 
+} */
